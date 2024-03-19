@@ -47,8 +47,8 @@ export default function MainCont() {
       apiName: "Dammam",
     },
     {
-      displayName: "القاهرة",
-      apiName: "Dammam",
+      displayName: "الجزائر العاصمة",
+      apiName: "dz",
     },
   ];
 
@@ -61,7 +61,7 @@ export default function MainCont() {
   ];
   const getTimings = async () => {
     const response = await axios.get(
-      `https://api.aladhan.com/v1/timingsByCity?country=SA&city=${selectedCity.apiName}`
+      `https://api.aladhan.com/v1/timingsByCity?country=dz&city=${selectedCity.apiName}`
     );
     setTimings(response.data.data.timings);
   };
@@ -149,7 +149,6 @@ export default function MainCont() {
 
     setNextPrayerIndex(prayerIndex);
 
-    // now after knowing what the next prayer is, we can setup the countdown timer by getting the prayer's time
     const nextPrayerObject = prayersArray[prayerIndex];
     const nextPrayerTime = timings[nextPrayerObject.key];
     const nextPrayerTimeMoment = moment(nextPrayerTime, "hh:mm");
@@ -219,27 +218,27 @@ export default function MainCont() {
         <Prayer
           name="الفجر"
           time={timings.Fajr}
-          image="https://wepik.com/api/image/ai/9a07baa7-b49b-4f6b-99fb-2d2b908800c2"
+          image="https://wepik.com/api/image/local/141600588/9b98d7a3-7bff-497a-be90-ac9bb78445b2?expires=1710907200&thumb=1&transparent=0&signature=6036f5c6f7ae0c94dd7c7b2f7425a8d495d071e293100805d7eec16aee7aae52"
         />
         <Prayer
           name="الظهر"
           time={timings.Dhuhr}
-          image="https://wepik.com/api/image/ai/9a07bb45-6a42-4145-b6aa-2470408a2921"
+          image="https://wepik.com/api/image/local/141600588/9b98d795-4036-4e6b-8583-e589eb5c6a3f?expires=1710907200&thumb=1&transparent=0&signature=4f7a43c389cc90d3e94093a62f79bd759d50ec215a10df354afe75b1f27168c5"
         />
         <Prayer
           name="العصر"
           time={timings.Asr}
-          image="https://wepik.com/api/image/ai/9a07bb90-1edc-410f-a29a-d260a7751acf"
+          image="https://wepik.com/api/image/local/141600588/9b98d936-5261-4532-9847-c0ead310d980?expires=1710907200&thumb=1&transparent=0&signature=4754db8597fc32dd1c368a756f3cd2ec311a7b35f8c4537c8deab4f182ceae1b"
         />
         <Prayer
           name="المغرب"
           time={timings.Sunset}
-          image="https://wepik.com/api/image/ai/9a07bbe3-4dd1-43b4-942e-1b2597d4e1b5"
+          image="https://wepik.com/api/image/local/141600588/9b98d78f-a450-4d67-ad28-eb383b87a72f?expires=1710907200&thumb=1&transparent=0&signature=aa6739e56b66b572aead5a787194100986bdd4484ee34b149fc68e9b78816a3d"
         />
         <Prayer
           name="العشاء"
           time={timings.Isha}
-          image="https://wepik.com/api/image/ai/9a07bc25-1200-4873-8743-1c370e9eff4d"
+          image="https://wepik.com/api/image/local/141600588/9b98d78f-a450-4d67-ad28-eb383b87a72f?expires=1710907200&thumb=1&transparent=0&signature=aa6739e56b66b572aead5a787194100986bdd4484ee34b149fc68e9b78816a3d"
         />
       </Stack>
       {/*== PRAYERS CARDS ==*/}
