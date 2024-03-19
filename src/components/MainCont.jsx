@@ -65,7 +65,7 @@ export default function MainCont() {
   ];
   const getTimings = async () => {
     const response = await axios.get(
-      `https://api.aladhan.com/v1/timingsByCity?country=dz&city=${selectedCity.apiName}`
+      `http://api.aladhan.com/v1/timingsByCity?country=dz&city=${selectedCity.apiName}`
     );
     setTimings(response.data.data.timings);
   };

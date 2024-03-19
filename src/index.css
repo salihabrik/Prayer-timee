@@ -66,3 +66,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+    /* Adjust the layout to stack elements vertically */
+    .topRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gridItem {
+        width: 100%;
+    }
+    .prayerCard {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .selectContainer {
+        width: 90%;
+    }
+    .getLocationButton {
+        width: 90%;
+    }
+}
