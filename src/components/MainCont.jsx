@@ -27,13 +27,17 @@ export default function MainCont() {
   const [remainingTime, setRemainingTime] = useState("");
 
   const [selectedCity, setSelectedCity] = useState({
-    displayName: "مكة المكرمة",
-    apiName: "Makkah al Mukarramah",
+      displayName: "الجزائر العاصمة",
+      apiName: "dz",
   });
 
   const [today, setToday] = useState("");
 
   const avilableCities = [
+    {
+      displayName: "الجزائر العاصمة",
+      apiName: "dz",
+    },
     {
       displayName: "مكة المكرمة",
       apiName: "Makkah al Mukarramah",
