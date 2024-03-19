@@ -233,7 +233,7 @@ export default function MainCont() {
         <Prayer
           name="المغرب"
           time={timings.Sunset}
-          image="https://wepik.com/api/image/local/141600588/9b98d78f-a450-4d67-ad28-eb383b87a72f?expires=1710907200&thumb=1&transparent=0&signature=aa6739e56b66b572aead5a787194100986bdd4484ee34b149fc68e9b78816a3d"
+          image="https://wepik.com/api/image/local/141600588/9b98d79e-f1aa-4bd8-828b-50842da7b954?expires=1710907200&thumb=1&transparent=0&signature=a69ba8b8633e7ef935574bbf205760c204533cd4c152d99541289c1e1088c307"
         />
         <Prayer
           name="العشاء"
