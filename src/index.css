@@ -23,7 +23,7 @@ a:hover {
 }
 
 body {
-  background-image: url(src/components/img/1.png)
+  background-image: url(src/components/img/1.png);
   margin: 0;
   display: flex;
   place-items: center;
