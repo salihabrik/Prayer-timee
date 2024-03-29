@@ -9,7 +9,7 @@ import MainCont from "./components/MainCont";
 
 function App() {
   const style = {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url()`,
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     display: "flex",
