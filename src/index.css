@@ -14,6 +14,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -31,7 +33,11 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
-
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
